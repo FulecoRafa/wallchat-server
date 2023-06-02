@@ -1,0 +1,15 @@
+[package]
+name = "wallchat-server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.3.1"
+bson = { version = "2.6.1", features = ["uuid-1"] }
+mongodb = { version = "2.5.0", features = ["tokio-runtime"] }
+pbkdf2 = { version = "0.12.1", features = ["simple", "password-hash"] }
+rand_core = { version = "0.6.4", features = ["std"] }
+serde = { version = "1.0.163", features = ["derive"] }
+tokio = { version = "1.28.2", features = ["full"] }
